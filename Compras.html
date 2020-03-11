@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>Compras</title>
+		<link rel="stylesheet" type="text/css" href="css/folhadeestilo.css">
+		<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Arial' rel='stylesheet'>
+	</head>
+
+	<body>
+
+		<header class="imgLogo">
+   			<img src="img/OtakuOnTitan_topo.png">
+   		</header>
+		
+		<nav class="menu">
+			<ul>
+				<li class="botao"><a href="OtakuOnTitan.html">inicial</a></li>
+				<li class="botao"><a href="Destaques.html">destaques</a></li>
+				<li class="botao"><a href="Catalogo.html">catalogo</a></li>
+				<li class="botao"><a href="Compras.html">compras</a></li>
+			</ul>
+		</nav>
+        		
+		<section>
+        	<h1>Compras</h1>
+            <form method="post" action="mailto:nome@servidor">
+                <fieldset class="fsDados">
+                	<legend>Dados Pessoais</legend>
+	                	
+                	<div>
+	                	Nome: <input type="text" size="60" id="nome">
+	                    <br><br>
+	                    Endereço: <textarea cols=60 rows=3 id="end"></textarea>
+	                    <br><br>
+                	</div>
+                	
+                	<div class="meiaLinEsq">
+                		<div class="colPri">
+                			<label for="cpf">CPF:</label><input type="text" maxlength="11" id="cpf">
+	                    	<br><br>
+		                    <label for="tel">Telefone:</label><input type="tel" maxlength="11" id="tel">
+		                    <br><br>
+		                    <label for="cel">Celular:</label><input type="tel" maxlength="11" id="cel">
+                		</div>
+	                </div>
+                    
+                    <div class="meiaLinDir"> 
+	                    <fieldset class="fsDir">
+	                        <legend>Nascimento:</legend>              
+	                        <input type="number" min="1" max="31" step="1"> / 
+	                        <input type="number" min="1" max="12" step="1"> / 
+	                        <input type="number" min="1900" max="2020" step="1">
+	                    </fieldset>
+	                    
+	                    <fieldset class="fsDir">                    
+	                        <legend>Gênero:</legend> 
+	                        <input type="radio" id="mas" name="sex" value="M">
+	                        <label for="mas" accesskey="m">Masculino</label>
+	                        <input type="radio" id="fem" name="sex" value="F">
+	                        <label for="fem" accesskey="f">Feminino</label>
+	                        <input type="radio" id="out" name="sex" value="O">
+	                        <label for="out" accesskey="o">Outro</label>
+	                    </fieldset>
+                	</div>
+					<div class="divLinha"></div>
+                </fieldset>
+            </form>
+           
+            <form method="post" action="mailto:nome@servidor">
+                <fieldset class="fsDados">
+	                <legend>Seleção de Produtos e Pagamento</legend>
+					<label for="prod">Produtos: <br>
+						<select>
+					        <option>-----</option>
+					        <optgroup label="Anime">
+					            <option>Death Note - DVD - Completo</option>
+					            <option>Naruto Shippuden T01 Box 01</option>
+					            <option>Naruto Shippuden T01 Box 02</option>
+					        </optgroup>
+				            <optgroup label="Mangá">
+				                <option>Naruto Gold - 55 Vol.</option>
+								<option>Attack on Titan - Vol 1-4</option>
+				               	<option>Attack on Titan - Vol 5-8</option>
+				               	<option>Naruto Box P01 Vol 1-27</option>			               	
+				            </optgroup>
+				            <optgroup label="Action Figure">
+				                <option>Naruto Shippuden - PVC</option>
+								<option>Ryuk - Death Note - PVC</option>
+				            </optgroup>			            
+				        </select>
+			        </label>                 
+		        	<input type="submit" value="Comprar">
+                    
+                    <div class="divLinha"><br></div>
+
+               		<fieldset class="fsEsq">
+               		    <legend>Dados do Cartão:</legend>               
+                            <fieldset class="fsEsq">
+                                <legend>Bandeira:</legend>
+			                        <input type="radio" id="visa" name="card" value="V">
+			                        <label for="visa" accesskey="v">Visa</label>
+			                        <input type="radio" id="master" name="card" value="M">
+			                        <label for="master" accesskey="m">Master</label>
+			                        <input type="radio" id="amex" name="card" value="A">
+			                        <label for="amex" accesskey="a">Amex</label>
+                            </fieldset>
+                    	<br><br><br><br>
+                        Validade: <input type="number" min="1" max="12" step="1"> / 
+                        <input type="number" min="2020" max="2100" step="1">
+                    	<br><br>
+                        Número: <input type="text" maxlength="16">
+                    	<br><br>                        
+                    </fieldset>
+
+	                <div class="meiaLinDir">   
+                    	<div class="elemDir">
+	                    	<textarea cols=25 rows=10 id="prod" readonly="readonly"></textarea>
+	                        <br><br>
+	                    	Valor: R$ <input type="text" size="10" id="prod">
+                    	</div>
+                    </div>
+                </fieldset>
+		        
+		        <div class="botoes">
+		            <input type=submit value="Enviar">
+		        	<input type=reset value="Limpar">
+		        </div>
+            </form>            
+	    </section>
+		
+        <footer class="ender">
+            Avenida Akihabara, 123 / Tel: (21) 91234-5678 / <a href="mailto:contato@manganime.com.br">contato@manganime.com.br</a>
+        </footer>
+
+	</body>
+</html>
